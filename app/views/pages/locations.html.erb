@@ -11,24 +11,25 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 /-->
     <link rel="stylesheet" type="text/css" href="GTFO.css">
-    
+
 </head>
 <body>
-    
+
       <div class="locations">
-          
+
             <center><p>CHOOSE YOUR CITY:</p>
-      
+        <%= link_to 'New York City', flights_path(:city=>"NYC") %>
+        <%= link_to 'Los Angeles', flights_path(:city=>"LA") %>
         <a href=""><div class="button">NEW YORK CITY</div></a>
         <a href=""><div class="button">LOS ANGELES</div></a>
         <a href=""><div class="button">CHICAGO</div></a>
         <a href=""><div class="button">PHILADELPHIA</div></a>
         <a href=""><div class="button">HOUSTON</div></a></center>
-          
+
     </div>
     <div class="footer">
         <a href="#"><div class="startover">START OVER <img class="plane" src="http://i62.tinypic.com/2dwhjlk.png"></div></a>
     </div>
- 
+
 </body>
 </html>
