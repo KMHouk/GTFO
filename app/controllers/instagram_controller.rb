@@ -1,5 +1,5 @@
 class InstagramController < ApplicationController
   def index
-    @instagram = Instagram.media_search("37.7808851", "-122.3948632", {:count => 1})
+    @instagram = Instagram.media_search("40.7127", "74.0059", {:count => 12})
   end
 end

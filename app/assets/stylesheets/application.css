@@ -12,11 +12,14 @@
  *
  *= require_tree .
  *= require_self
- */
+
 
 // Place all the styles related to the locations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ */
+
+
 
 body {
     background: #00CCFF;
@@ -67,9 +70,10 @@ p {
 }
 
 .footer {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
     
 }
 
@@ -84,9 +88,19 @@ p {
 }
 
 .nav {
-    position: fixed;
-    left: 25px;
-    bottom: 25px;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav a{
     text-decoration:none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -98,4 +112,64 @@ p {
 .nav ul {
     list-style-type: none;
     border: none !important;
+}
+
+.login  {
+    padding: 5%;
+    margin: auto;
+    vertical-align: middle;
+    width: 60%;
+    border: 5px solid #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.signup  {
+    padding: 5%;
+    margin: auto;
+    vertical-align: middle;
+    width: 60%;
+    border: 5px solid #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form input{
+    padding: 3%;
+    background: #FFFFFF;
+    color: #00CCFF;
+    border: none;
+    margin: 3%;
+    vertical-align: middle;
+    width: 75%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.form input[type="submit"] {
+    background: #00CCFF;
+    color: #FFFFFF;
+    border: none;
+    vertical-align: middle;
+    width: 25%;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.instagram {
+    padding: 5%;
+    margin: auto;
+    vertical-align: middle;
+    width: 70%;
+    border: 5px solid #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.image {
+    width: 30%;
+    display: inline-block;
+    padding: 5px;
+    
 }
