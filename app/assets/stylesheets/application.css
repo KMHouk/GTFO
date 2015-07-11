@@ -131,3 +131,45 @@ p {
     border: 5px solid #FFFFFF;
     font-family: 'Montserrat', sans-serif;
 }
+
+.form input{
+    padding: 3%;
+    background: #FFFFFF;
+    color: #00CCFF;
+    border: none;
+    margin: 3%;
+    vertical-align: middle;
+    width: 75%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.form input[type="submit"] {
+    background: #00CCFF;
+    color: #FFFFFF;
+    border: none;
+    vertical-align: middle;
+    width: 25%;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.instagram {
+    padding: 5%;
+    margin: auto;
+    vertical-align: middle;
+    width: 70%;
+    border: 5px solid #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.image {
+    width: 30%;
+    display: inline-block;
+    padding: 5px;
+    
+}

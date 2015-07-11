@@ -1,8 +1,8 @@
 <div class="signup">
-  
+  <center>
     
     <!-- Your form here -->
-    <%= form_for(@user) do |f|%>
+    <%= form_for(@user, html: { class: "form"}) do |f|%>
       <%= f.text_field :first_name, :placeholder => "First Name"%>
       <%= f.text_field :last_name, :placeholder => "Last Name" %>
       <%= f.email_field :email, :placeholder => "Email" %>
@@ -10,8 +10,8 @@
 
       <%= f.password_field :password_confirmation, :placeholder => "Confirm Password" %>
     	
-    <%= f.submit "Create User" %>
+    <%= f.submit "Sign Up" %>
     <% end %>
-
+</center>
   
 </div>
