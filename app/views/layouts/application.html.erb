@@ -7,10 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
- 
+
     <div class="header">
         <%= link_to(root_path) do %>
-          <center><img class="logo" src="http://i57.tinypic.com/28kqcfb.png"></center>
+          <center><a href="#"><img class="logo" src="http://i57.tinypic.com/28kqcfb.png"></a></center>
         <% end %>
     </div>
 
@@ -29,6 +29,7 @@
           <% end %>
 
         </div>
+
 
 <%= yield %>
 
