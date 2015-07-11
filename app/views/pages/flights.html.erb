@@ -1,6 +1,10 @@
 <%= @city %>
 
+
 <% @flights[:Destinations].each do |f| %>
 <li><%= f[:Destination][:CountryCode] %></li>
 <li><%= f[:Destination][:DestinationLocation]%></li>
 <%end%>
+
+<%= @flights.inspect %>
+
