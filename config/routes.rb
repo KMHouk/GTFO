@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   
   
-  root 'pages#home'
+  root 'pages#locations'
   
   get '/signup' => 'users#new'
   resources :users
@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   
   delete 'logout' => 'sessions#destroy'
   
-  get 'locations'=>'pages#locations'
+  get 'locations'=>'pages#locations', as: :locations
+  get 'flights' => 'pages#flights', as: :flights
   
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
