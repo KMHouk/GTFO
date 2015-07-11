@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   
   delete 'logout' => 'sessions#destroy'
   
+  get 'locations'=>'pages#locations'
   
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
