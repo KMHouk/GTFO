@@ -1,0 +1,67 @@
+// Place all the styles related to the locations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    background: #00CCFF;
+    padding: 25px;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.locations{
+    padding: 5%;
+    margin: auto;
+    vertical-align: middle;
+    width: 60%;
+    border: 5px solid #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+    padding: 5%;
+    margin: 1%;
+    width: 35%;
+    border: 5px solid #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    width: 150px;
+    padding-bottom: 50px;
+}
+
+.plane {
+    height: 15px;   
+    
+}
+
+.container {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    
+}
+
+.startover {
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
