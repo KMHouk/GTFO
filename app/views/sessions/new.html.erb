@@ -1,5 +1,5 @@
 <div class="login">
-  <div class="container">
+  
 
   <%= form_for(:session, url: login_path) do |f| %> 
   <%= f.email_field :email, :placeholder => "Email" %> 
@@ -7,5 +7,5 @@
   <%= f.submit "Log in", class: "btn-submit" %>
 	<% end %>
     
-  </div>
+  
 </div>
