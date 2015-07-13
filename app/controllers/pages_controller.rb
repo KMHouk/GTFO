@@ -1,4 +1,3 @@
-# require 'sabre_dev_studio'
 require 'sabre_dev_studio-flight'
 
 class PagesController < ApplicationController
