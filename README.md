@@ -16,3 +16,13 @@ This is a rails app to have a user be presented with top destination flights fro
 - User can select theme of destination
 - Invite friends to GTFO with them
 - Book said flights
+
+### Build Instructions
+```
+git clone https://github.com/KMHouk/GTFO.git
+cd GTFO
+bundle
+rake db:migrate
+rails server
+```
+Then visit [localhost:3000](http://localhost:3000/) in your browser
