@@ -1,5 +1,5 @@
 require 'sabre_dev_studio-flight'
-
+require 'json'
 class PagesController < ApplicationController
 
     before_action :get_flight_data, :only => [:flights]
@@ -21,8 +21,10 @@ class PagesController < ApplicationController
 
     def get_flight_data
       @city = params[:city]
-      # @flights = SabreDevStudio::Base.get("/v1/lists/top/destinations?origin=#{@city}&topdestinations=5")
-      @flights = SabreDevStudio::Base.get('/v1/shop/themes')
+      flights = SabreDevStudio::Base.get("/v1/lists/top/destinations?origin=#{@city}&topdestinations=5")
+      @parsed = JSON.parse(flights.body)
+      # @flights = JSON.pretty_generate(@flights)
+      # @flights = SabreDevStudio::Base.get('/v1/shop/themes')
     end
 
 end

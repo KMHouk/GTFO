@@ -169,6 +169,7 @@ DEPENDENCIES
   instagram
   jbuilder (~> 2.0)
   jquery-rails
+  json
   rails (= 4.2.2)
   sabre_dev_studio-flight
   sass-rails (~> 5.0)
