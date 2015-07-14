@@ -18,11 +18,11 @@
       <div class="locations">
 
             <center><p>CHOOSE YOUR CITY:</p>
-        <div class="button"><%= link_to 'New York City', flights_path(:city=>"NYC") %></div>
-        <div class="button"><%= link_to 'Los Angeles', flights_path(:city=>"LA") %></div>
-        <div class="button"><%= link_to 'CHICAGO', flights_path(:city=>"CHI") %></div>
-        <div class="button"><%= link_to 'PHILADELPHIA', flights_path(:city=>"PHILLY") %></div>
-        <div class="button"><%= link_to 'HOUSTON', flights_path(:city=>"HOUSTON") %></div></a></center>
+        <%= link_to 'New York City', flights_path(:city=>"NYC"), class: "button" %>
+        <%= link_to 'Los Angeles', flights_path(:city=>"LAX"), class: "button" %>
+        <%= link_to 'CHICAGO', flights_path(:city=>"ORD"), class: "button" %>
+        <%= link_to 'PHILADELPHIA', flights_path(:city=>"PHL"), class: "button" %>
+        <%= link_to 'HOUSTON', flights_path(:city=>"IAH"), class: "button" %></center>
 
     </div>
     <div class="footer">
