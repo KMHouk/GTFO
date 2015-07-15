@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get '/locations'=>'pages#locations', as: :locations
   get '/flights' => 'pages#flights', as: :flights
 
+  get '/instagram' => 'instagram#convert', as: :insta
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

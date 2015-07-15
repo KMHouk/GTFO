@@ -1,8 +1,8 @@
 
 <!-- Example of my thought process: -->
-<!--
-<%= @parsed.inspect %>
-<hr>
+
+<!-- <%= @parsed.inspect %> -->
+<!-- <hr>
 <hr>
 <br><br>
 
@@ -32,16 +32,27 @@
 <%end%>
 <br>
 <hr>
-<hr>
+<hr> -->
 
-<% @parsed["Destinations"].each do |f| %>
+<!-- <% @parsed["Destinations"].each do |f| %>
   <% f["Destination"].each do |g| %>
     <li><%= g %></li>
   <%end%>
   <br><br>
 <%end%> -->
-
-<% @parsed["Destinations"].each do |f| %>
-  <%= f["Destination"]["DestinationLocation"]%>
-  <br><br>
-<%end%>
+<body>
+  <div class="locations">
+    <center>
+      <p>WHERE SHALL YOU GTFO?</p>
+      <% @parsed["Destinations"].each do |f| %>
+      <% if f["Destination"]["MetropolitanAreaName"] %>
+        <% name = f["Destination"]["MetropolitanAreaName"] %>
+      <% else %>
+        <% name = f["Destination"]["CityName"] %>
+      <%end%>
+      <%= link_to "#{name}", insta_path(:choice=>"#{name}"), class:"button"%>
+      <br><br>
+      <%end%>
+    </center>
+  </div>
+</body>

@@ -23,8 +23,6 @@ class PagesController < ApplicationController
       @city = params[:city]
       flights = SabreDevStudio::Base.get("/v1/lists/top/destinations?origin=#{@city}&topdestinations=5")
       @parsed = JSON.parse(flights.body)
-      # @flights = JSON.pretty_generate(@flights)
-      # @flights = SabreDevStudio::Base.get('/v1/shop/themes')
     end
 
 end
