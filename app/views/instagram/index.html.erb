@@ -1,10 +1,12 @@
-<center><p>Instagram Feed</p>
-<p>Check out what other people are doing in this location:</p></center>
-<div class = "instagram">
-<% @instagram.each do |instagram| %>
+<center>
+  <p>Instagram Feed</p>
+  <p>Check out what other people are doing in this location:</p>
+</center>
+<div ="instagram" class>
+  <% @instagram.each do |instagram| %>
 
-    <%= image_tag instagram.images.standard_resolution.url, class: "image" %>
+  <%= image_tag instagram.images.standard_resolution.url, class: "image" %>
 
-    <% end %>
-    
-    </div>
+  <% end %>
+
+</div>

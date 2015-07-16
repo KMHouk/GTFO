@@ -30,6 +30,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'sabre_dev_studio-flight'
 
 gem 'json'
+
+gem 'geocoder'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
