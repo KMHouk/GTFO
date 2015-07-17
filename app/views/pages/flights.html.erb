@@ -52,7 +52,8 @@
   
   <div class="locations">
     <center>
-      <p>WHERE SHALL YOU GTFO?</p>
+      <h1>WHERE SHALL YOU GTFO?</h1>
+      <p>These are the top 5 destinations from <b><%= @city %></b> airport</p>
       <% @parsed["Destinations"].each do |f| %>
       <% if f["Destination"]["MetropolitanAreaName"] %>
         <% name = f["Destination"]["MetropolitanAreaName"] %>
