@@ -23,8 +23,14 @@
 
 body {
     background: #00CCFF;
-    padding: 25px;
 }
+
+@media (max-width: 1024px) {
+  body {
+    text-align: center;
+    }
+}
+
 
 p {
     color: #FFFFFF;
@@ -57,41 +63,82 @@ p {
     color: #FFFFFF;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+    cursor:pointer;
 }
+
+
+@media (max-width: 1024px) {
+  .button {
+    padding: 5%;
+    margin: 1%;
+    width: 35%;
+    border: 5px solid #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    cursor:pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 5%;
+    margin: 3%;
+    width: 60%;
+    border: 5px solid #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    cursor:pointer;
+  }
+}
+
 
 .logo {
     width: 150px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    vertical-align: middle;
 }
+
+@media (max-width: 1024px) {
+  .logo {
+    width: 150px;
+    padding: 25px;
+    vertical-align: middle;
+    }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 150px;
+    padding: 30px;
+    vertical-align: middle;
+    }
+}
+
 
 .plane {
     height: 15px;   
     
 }
 
-.footer {
-    position: absolute;
-    display: inline-block;
-    bottom: 0;
-    right: 0;
-    
-}
-
-.startover {
-    text-decoration:none;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    border: none !important;
-}
 
 .nav {
     position: absolute;
     display: inline-block;
     left: 0;
-    bottom: 0;
+    top: 0;
+    padding: 25px;
     text-decoration:none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -111,8 +158,81 @@ p {
 
 .nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
     border: none !important;
 }
+
+
+@media (max-width: 1024px) {
+  .nav ul {
+    list-style-type: none;
+    border: none !important;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .nav {
+    position: relative;
+    display: inline;
+    padding: 0;
+    text-align: center;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+
+/*startover*/
+
+.startover {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 0;
+    padding: 25px;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.startover a{
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@media (max-width: 1024px) {
+  .startover {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+
+
+
 
 .login  {
     padding: 5%;
@@ -162,14 +282,37 @@ p {
     padding: 5%;
     margin: auto;
     vertical-align: middle;
+    text-align: center;
     width: 70%;
     border: 5px solid #FFFFFF;
     font-family: 'Montserrat', sans-serif;
 }
 
 .image {
-    width: 30%;
+    width: 26%;
+    background: #FFFFFF;
     display: inline-block;
-    padding: 5px;
+    padding: 13px;
+    margin: 13px;
     
+}
+
+@media (max-width: 1024px) {
+  .image {
+    width: 24%;
+    background: #FFFFFF;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 35%;
+    background: #FFFFFF;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+  }
 }
