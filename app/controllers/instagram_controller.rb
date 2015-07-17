@@ -5,7 +5,7 @@ class InstagramController < ApplicationController
     location = Geocoder.search(@insta)
     @@latitude = location[0].latitude
     @@longitude = location[0].longitude
-    redirect_to action: "index", :arrival_city => @insta
+    redirect_to action: "index", arrival_city: @insta
   end
 
   def index
