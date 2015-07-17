@@ -10,7 +10,7 @@ class InstagramController < ApplicationController
   end
 
   def index
-    @instagram = Instagram.media_search("#{@@latitude}", "#{@@longitude}", {:count => 12})
+    @instagram = Instagram.media_search("#{@@latitude}", "#{@@longitude}", {:count => 18})
   end
 
 end

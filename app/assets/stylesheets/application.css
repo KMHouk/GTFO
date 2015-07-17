@@ -269,7 +269,7 @@ p {
 .form input[type="submit"] {
     background: #00CCFF;
     color: #FFFFFF;
-    border: none;
+    border: 5px solid #FFFFFF;
     vertical-align: middle;
     width: 25%;
     font-size: 18px;
