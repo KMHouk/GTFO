@@ -1,65 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GTFO</title>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
-<!-- Example of my thought process: -->
+    <link rel="stylesheet" type="text/css" href="GTFO.css">
 
-<!-- <%= @parsed.inspect %> -->
-<!-- <hr>
-<hr>
-<br><br>
-
-<%= @parsed["Destinations"][0]["Rank"] %>
-<% @parsed["Destinations"][0]["Destination"].each do |f| %>
-  <li><%= f %></li>
-<%end%>
-<br><br>
-<%= @parsed["Destinations"][1]["Rank"] %>
-<% @parsed["Destinations"][1]["Destination"].each do |f| %>
-  <li><%= f %></li>
-<%end%>
-<br><br>
-<%= @parsed["Destinations"][2]["Rank"] %>
-<% @parsed["Destinations"][2]["Destination"].each do |f| %>
-  <li><%= f %></li>
-<%end%>
-<br><br>
-<%= @parsed["Destinations"][3]["Rank"] %>
-<% @parsed["Destinations"][3]["Destination"].each do |f| %>
-  <li><%= f %></li>
-<%end%>
-<br><br>
-<%= @parsed["Destinations"][4]["Rank"] %>
-<% @parsed["Destinations"][4]["Destination"].each do |f| %>
-  <li><%= f %></li>
-<%end%>
-<br>
-<hr>
-<hr> -->
-
-<!-- <% @parsed["Destinations"].each do |f| %>
-  <% f["Destination"].each do |g| %>
-    <li><%= g %></li>
-  <%end%>
-  <br><br>
-<%end%> -->
+</head>
 <body>
-  
-  
+
+
   <div class="startover">
           <%= link_to(root_path) do %>
           START OVER <img class="plane" src="http://i62.tinypic.com/2dwhjlk.png">
         <% end %>
           </div>
-  
-  
+
+
   <div class="locations">
     <center>
       <p>WHERE SHALL YOU GTFO?</p>
+      <p>These are the top 5 destinations from <b><%= @city %></b> airport</p>
       <% @parsed["Destinations"].each do |f| %>
       <% if f["Destination"]["MetropolitanAreaName"] %>
         <% name = f["Destination"]["MetropolitanAreaName"] %>
       <% else %>
         <% name = f["Destination"]["CityName"] %>
       <%end%>
-      <%= link_to "#{name}", insta_path(:choice=>"#{name}"), class:"button"%>
+      <% destination_airport = f["Destination"]["DestinationLocation"] %>
+      <%= link_to "#{name}", insta_path(:choice=>"#{name}",:city=>"#{@city}",:destination_city_airport=>"#{destination_airport}"), class:"button"%>
       <br><br>
       <%end%>
     </center>
