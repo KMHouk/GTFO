@@ -2,30 +2,33 @@
 <html>
 <head>
   <title>GTFO</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+      <link rel="stylesheet" type="text/css" href="GTFO.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  
+
   <%= favicon_link_tag 'favicon.ico' %>
 </head>
 <body>
 
     <div class="nav">
-          <% if current_user %> 
-            <ul> 
-              <li><%= current_user.first_name %></li> 
-              <li><%= link_to "Log out", logout_path, method: "delete" %></li> 
-            </ul> 
-          <% else %> 
-            <ul> 
-              <li><%= link_to "Login", 'login' %></a></li> 
-              <li><%= link_to "Signup", 'signup' %></a></li> 
-            </ul> 
+          <% if current_user %>
+            <ul>
+              <li><%= current_user.first_name %></li>
+              <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+            </ul>
+          <% else %>
+            <ul>
+              <li><%= link_to "Login", 'login' %></a></li>
+              <li><%= link_to "Signup", 'signup' %></a></li>
+            </ul>
           <% end %>
         </div>
-        
-        
-        
+
+
+
 
     <div class="header">
         <%= link_to(root_path) do %>

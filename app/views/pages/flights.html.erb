@@ -1,16 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GTFO</title>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="GTFO.css">
+
+</head>
 <body>
-  
-  
+
+
   <div class="startover">
           <%= link_to(root_path) do %>
           START OVER <img class="plane" src="http://i62.tinypic.com/2dwhjlk.png">
         <% end %>
           </div>
-  
-  
+
+
   <div class="locations">
     <center>
-      <h1>WHERE SHALL YOU GTFO?</h1>
+      <p>WHERE SHALL YOU GTFO?</p>
       <p>These are the top 5 destinations from <b><%= @city %></b> airport</p>
       <% @parsed["Destinations"].each do |f| %>
       <% if f["Destination"]["MetropolitanAreaName"] %>
