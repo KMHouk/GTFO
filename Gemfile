@@ -31,6 +31,7 @@ gem 'json'
 gem 'geocoder'
 
 gem 'instagram'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -40,8 +41,6 @@ group :production do
   gem 'pg', '0.18.1'
   gem 'rails_12factor'
 end
-
-gem 'pry'
 
 
 group :development, :test do

@@ -6,10 +6,9 @@
 
 <div class ="instagram">
 <center>
-  <p>GTFO of <%= @departing_city %>!
   <p>Instagram Feed</p>
   <p>Check out what other people are doing in <%= @arrival_city %></p>
-  <p>Fares as low as <%= @departing_city %>
+  <p>Fares as low as $<%= @minimum_fare %>
 </center>
 
   <% @instagram.each do |instagram| %>
@@ -18,4 +17,3 @@
 
   <% end %>
 </div>
-<%= @parsed_fares.inspect %>
