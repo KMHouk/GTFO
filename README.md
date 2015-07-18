@@ -2,6 +2,9 @@
 
 This is a rails app to have a user be presented with top destination flights from airports near them, with Instagram pictures of those destinations (in order to intice the user how much fun it would be to GTFO).
 
+## Live Demo
+A live demo is available at: http://gettheflightsout.herokuapp.com/
+
 ### Basic userflow is as follows (version 1):
 1. User signs up for an account with GTFO
 2. User selects one of 5 defined airports
